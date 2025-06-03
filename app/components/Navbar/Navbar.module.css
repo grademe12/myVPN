@@ -1,0 +1,49 @@
+/* app/components/Navbar/Navbar.module.css */
+.header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navContainer {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.navList {
+    display: flex;
+}
+
+.navItem a {
+    padding: 10px 15px;
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+    color: #3498db;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.5em;
+    }
+    .navList {
+        display: none;
+    }
+}
